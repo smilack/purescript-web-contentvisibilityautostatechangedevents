@@ -1,0 +1,3 @@
+module Web.ContentVisibilityAutoStateChangedEvent (module Exports) where
+
+import Web.ContentVisibilityAutoStateChangedEvent.ContentVisibilityAutoStateChangedEvent (ContentVisibilityAutoStateChangedEvent) as Exports
