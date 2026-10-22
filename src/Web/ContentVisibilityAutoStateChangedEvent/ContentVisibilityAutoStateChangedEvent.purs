@@ -1,6 +1,9 @@
+-- | Implementation of ContentVisibilityAutoStateChangedEvent interface from
+-- | [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/).
 module Web.ContentVisibilityAutoStateChangedEvent.ContentVisibilityAutoStateChangedEvent
   ( ContentVisibilityAutoStateChangedEvent
   , fromEvent
+  , skipped
   , toEvent
   ) where
 
@@ -16,3 +19,5 @@ fromEvent = unsafeReadProtoTagged "ContentVisibilityAutoStateChangedEvent"
 
 toEvent :: ContentVisibilityAutoStateChangedEvent -> Event
 toEvent = unsafeCoerce
+
+foreign import skipped :: ContentVisibilityAutoStateChangedEvent -> Boolean
